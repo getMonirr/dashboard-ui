@@ -82,7 +82,7 @@ const DashboardMenus = () => {
   return (
     <div className="leftBoard">
       <div className="collapse collapse-open collapse-arrow">
-        <input type="radio" name="accordion" checked="checked" />
+        <input type="radio" name="accordion" defaultChecked />
         <div className="collapse-title text-xs font-medium px-0">Dashboard</div>
         <div className="collapse-content px-0">
           <ul className="space-y-[27px]">

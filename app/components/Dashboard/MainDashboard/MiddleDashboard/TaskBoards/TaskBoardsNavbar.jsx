@@ -14,22 +14,22 @@ const TaskBoardsNavbar = () => {
       </div>
       <div>
         <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 lg:gap-8 font-bold text-xs">
-          <Link className="text-gray-800" href="/timeline">
+          <Link className="text-blue-500 underline underline-offset-[12px]" href="/timeline">
             Timeline
           </Link>
-          <Link className="text-gray-400" href="/calender">
+          <Link className="text-gray-400 hover:underline hover:underline-offset-[12px] hover:text-blue-500" href="/calender">
             Calender
           </Link>
-          <Link className="text-gray-400" href="/dashboard">
+          <Link className="text-gray-400 hover:underline hover:underline-offset-[12px] hover:text-blue-500" href="/dashboard">
             Dashboard
           </Link>
-          <Link className="text-gray-400" href="/progress">
+          <Link className="text-gray-400 hover:underline hover:underline-offset-[12px] hover:text-blue-500" href="/progress">
             Progress
           </Link>
-          <Link className="text-gray-400" href="/forms">
+          <Link className="text-gray-400 hover:underline hover:underline-offset-[12px] hover:text-blue-500" href="/forms">
             Forms
           </Link>
-          <Link className="text-gray-400" href="/more">
+          <Link className="text-gray-400 hover:underline hover:underline-offset-[12px] hover:text-blue-500" href="/more">
             more
           </Link>
         </div>

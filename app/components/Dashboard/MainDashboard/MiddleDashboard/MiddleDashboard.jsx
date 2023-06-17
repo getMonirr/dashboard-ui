@@ -5,6 +5,7 @@ import TaskBoardsNavbar from "./TaskBoards/TaskBoardsNavbar";
 
 import SingleTaskCard from "./TaskBoards/TaskStatus/SingleTaskCard";
 import TaskHeading from "./TaskBoards/TaskStatus/TaskHeading";
+import AddNewTask from "./TaskBoards/TaskStatus/AddNewTask";
 
 const MiddleDashboard = () => {
   return (
@@ -15,7 +16,7 @@ const MiddleDashboard = () => {
         <div>
           {/* heading */}
           <div className="mb-8">
-            <TaskHeading />
+            <TaskHeading name="Backlog Tasks" count="5" />
           </div>
           {/* // task card */}
           <div className="space-y-6">
@@ -23,38 +24,38 @@ const MiddleDashboard = () => {
             <SingleTaskCard />
             <SingleTaskCard />
             <SingleTaskCard />
+            <AddNewTask />
           </div>
         </div>
         <div>
           {/* heading */}
           <div className="mb-8">
-            <TaskHeading />
+            <TaskHeading name="To Do Tasks" count={4} />
           </div>
           {/* // task card */}
           <div className="space-y-6">
             <SingleTaskCard />
             <SingleTaskCard />
-            <SingleTaskCard />
-            <SingleTaskCard />
+            <AddNewTask />
           </div>
         </div>
         <div>
           {/* heading */}
           <div className="mb-8">
-            <TaskHeading />
+            <TaskHeading name="In Progress" count={2} />
           </div>
           {/* // task card */}
           <div className="space-y-6">
             <SingleTaskCard />
             <SingleTaskCard />
             <SingleTaskCard />
-            <SingleTaskCard />
+            <AddNewTask />
           </div>
         </div>
         <div>
           {/* heading */}
           <div className="mb-8">
-            <TaskHeading />
+            <TaskHeading name="Done" count={5} />
           </div>
           {/* // task card */}
           <div className="space-y-6">
@@ -62,6 +63,8 @@ const MiddleDashboard = () => {
             <SingleTaskCard />
             <SingleTaskCard />
             <SingleTaskCard />
+            <SingleTaskCard />
+            <AddNewTask />
           </div>
         </div>
       </div>

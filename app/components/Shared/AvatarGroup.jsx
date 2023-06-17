@@ -9,18 +9,18 @@ const AvatarGroup = ({ ratio = "w-[40px] h-[40px]", hidden = false }) => {
         {!hidden && (
           <div className="avatar">
             <div className={`${ratio}`}>
-              <Image src={avatar} />
+              <Image alt="avatar" src={avatar} />
             </div>
           </div>
         )}
         <div className="avatar">
           <div className={`${ratio}`}>
-            <Image src={avatar} />
+            <Image alt="avatar" src={avatar} />
           </div>
         </div>
         <div className="avatar">
           <div className={`${ratio}`}>
-            <Image src={avatar} />
+            <Image alt="avatar" src={avatar} />
           </div>
         </div>
         <div className="avatar placeholder">

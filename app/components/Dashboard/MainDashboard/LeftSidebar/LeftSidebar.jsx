@@ -12,7 +12,7 @@ const LeftSidebar = () => {
     <div
       className={`xl:w-[240px] border-r-[1px] px-8 min-h-screen py-8 ${
         isShow
-          ? "block absolute transition-all w-full bg-white z-50 backdrop-blur-2xl"
+          ? "block absolute transition-all w-full min-h-screen bg-white z-50 backdrop-blur-2xl"
           : "hidden lg:block"
       }`}
     >
