@@ -37,7 +37,8 @@ const ProjectMenus = () => {
   ];
 
   return (
-    <div className="collapse collapse-open collapse-arrow">
+    <div className="leftBoard">
+      <div className="collapse collapse-open collapse-arrow">
       <input type="radio" name="my-accordion-2" />
       <div className="collapse-title text-xs font-medium px-0">Projects</div>
       <div className="collapse-content px-0">
@@ -60,6 +61,8 @@ const ProjectMenus = () => {
         </ul>
       </div>
     </div>
+    </div>
+    
   );
 };
 
