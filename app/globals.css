@@ -2,26 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.leftBoard .collapse-arrow .collapse-title:after {
+  @apply top-[40%] right-[12px] text-blue-600;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.taskBoard .collapse-arrow .collapse-title:after {
+  @apply text-[#B8BFCC];
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.taskBoard-avatar-group .avatar > div {
+  aspect-ratio: 9/2;
 }
