@@ -7,9 +7,9 @@ import AvatarGroup from "@/app/components/Shared/AvatarGroup";
 
 const TaskBoardsNavbar = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-4 justify-between items-center">
-      <div className="flex items-center gap-7">
-        <h2 className="text-3xl font-bold">Task Boards</h2>
+    <div className="flex flex-col xl:flex-row gap-4 justify-between items-center">
+      <div className="flex items-center gap-4 2xl:gap-7">
+        <h2 className="text-2xl 2xl:text-3xl font-bold">Task Boards</h2>
         <Image alt="edit" src={edit} />
       </div>
       <div>

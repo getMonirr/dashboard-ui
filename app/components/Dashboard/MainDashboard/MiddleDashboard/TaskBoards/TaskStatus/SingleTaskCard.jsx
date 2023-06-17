@@ -5,7 +5,7 @@ import Image from "next/image";
 const SingleTaskCard = () => {
   return (
     <div className="card w-full bg-base-100 shadow-xl rounded-lg">
-      <div className="card-body p-5">
+      <div className="card-body p-5 xl:p-3">
         <div>
           <h2 className="card-title text-xs text-[#1F2633] justify-between font-medium">
             Model Answer
@@ -29,7 +29,7 @@ const SingleTaskCard = () => {
           </div>
         </div>
         <div className="flex justify-between items-center">
-          <AvatarGroup hidden={true} ratio="w-[32px] h-[32px]" />
+          <AvatarGroup hidden={true} ratio="w-[32px]  h-[32px] xl:w-[27px]  xl:h-[27px]" />
           <div className="flex justify-between items-center gap-2">
             <div className="flex items-center gap-[10px]">
               <Image alt="more" src={task1} />

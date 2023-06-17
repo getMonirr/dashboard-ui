@@ -13,9 +13,9 @@ import shape_circles from "@/public/icons/taskboard/shape_circles.svg";
 
 const TaskBoardViewOptions = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-6 lg:items-center justify-between py-7">
-      <div className="flex flex-col lg:flex-row lg:items-center lg:divide-x-2 gap-2 lg:gap-4">
-        <div className="join lg:join-horizontal border-[1px] w-[230px]">
+    <div className="flex flex-col xl:flex-row gap-6 xl:items-center justify-between py-7">
+      <div className="flex flex-col sm:flex-row lg:flex-row lg:items-center sm:justify-between 2xl:divide-x-2 gap-2 xl:gap-4 2xl:gap-2">
+        <div className="join lg:join-horizontal border-[1px] w-[230px] xl:w-full 2xl:w-[230px]">
           <button className="btn join-item capitalize text-gray-500 text-xs btn-sm">
             <Image alt="dashboard" src={dashboard} />
             Board View
@@ -25,7 +25,10 @@ const TaskBoardViewOptions = () => {
           </button>
         </div>
         <div>
-          <div tabIndex={0} className="collapse collapse-arrow w-48 lg:pl-5">
+          <div
+            tabIndex={0}
+            className="collapse collapse-arrow sm:w-40 lg:w-48 lg:pl-5 xl:pl-8 2xl:pl-4"
+          >
             <div className="collapse-title p-0 py-1 min-h-0 text-xs font-medium">
               <div className="flex items-center gap-2">
                 <Image alt="dashboard" src={lock} />
@@ -37,7 +40,7 @@ const TaskBoardViewOptions = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-4 lg:pl-4">
+        <div className="flex items-center gap-4 xl:pl-4 xl:hidden 2xl:flex 2xl:gap-1">
           <p className="text-xs">Owners</p>
           <Image alt="twitter" src={twitter} />
           <p className="text-xs capitalize">twitter team</p>
@@ -55,7 +58,7 @@ const TaskBoardViewOptions = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-evenly lg:justify-start gap-2">
+      <div className="flex items-center justify-evenly sm:justify-normal lg:justify-start gap-2">
         <button className="btn btn-square btn-outline bg-white border-[#EBEEF2] hover:bg-base-300 hover:border-[#EBEEF2]">
           <Image alt="icon" src={select_file} />
         </button>

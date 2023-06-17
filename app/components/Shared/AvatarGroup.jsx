@@ -29,7 +29,7 @@ const AvatarGroup = ({ ratio = "w-[40px] h-[40px]", hidden = false }) => {
           </div>
         </div>
       </div>
-      <div className="avatar placeholder ml-8 rounded-full">
+      <div className="avatar placeholder ml-8 xl:ml-0 rounded-full">
         <div
           className={`bg-[#F2F4F7] rounded-full text-neutral-content cursor-pointer ${ratio}`}
         >

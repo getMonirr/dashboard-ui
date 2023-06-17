@@ -7,12 +7,12 @@ import search from "@/public/icons/search.svg";
 const SearchBar = () => {
   return (
     <div className="flex items-center gap-8">
-      <div className="form-control w-full max-w-xs relative">
+      <div className="form-control w-full max-w-[200px] relative">
         <Image alt="image" className="absolute left-5 top-4" src={search} />
         <input
           type="text"
-          placeholder="Type here"
-          className="input input-bordered w-full max-w-xs py-6 pl-16"
+          placeholder="Search Tasks"
+          className="input input-bordered w-full max-w-[200px] py-6 pl-16 placeholder:text-xs"
         />
         <Image alt="image" className="absolute right-5 top-3" src={input} />
       </div>
